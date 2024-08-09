@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "KHR.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

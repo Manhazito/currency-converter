@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "MWK.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
