@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RamosBasicsLibrary
 
 struct RatesScreenView: View {
     

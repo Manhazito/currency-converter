@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,13 +23,13 @@
 		D46ABF682C655D5100E025E7 /* FrankfurterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF672C655D5100E025E7 /* FrankfurterResponse.swift */; };
 		D46ABF6A2C655E0500E025E7 /* RatesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF692C655E0500E025E7 /* RatesScreenView.swift */; };
 		D46ABF6F2C6579A300E025E7 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF6E2C6579A300E025E7 /* ApiConstants.swift */; };
-		D46ABF722C65816000E025E7 /* RamosBasicsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D46ABF712C65816000E025E7 /* RamosBasicsLibrary */; };
 		D46ABF752C658BDE00E025E7 /* MainCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF742C658BDE00E025E7 /* MainCoinView.swift */; };
 		D46ABF772C658C1300E025E7 /* SecundaryCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF762C658C1300E025E7 /* SecundaryCoinView.swift */; };
 		D46ABF792C658C4B00E025E7 /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF782C658C4B00E025E7 /* LoaderButton.swift */; };
 		D46ABF7C2C6607C400E025E7 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF7B2C6607C400E025E7 /* ViewCoordinator.swift */; };
 		D46ABF7E2C66081400E025E7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF7D2C66081400E025E7 /* SplashScreenView.swift */; };
 		D46ABF802C6615E800E025E7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46ABF7F2C6615E800E025E7 /* Transaction.swift */; };
+		D4EE39942C6A5D8A004D13E5 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EE39932C6A5D8A004D13E5 /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +75,7 @@
 		D46ABF7B2C6607C400E025E7 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		D46ABF7D2C66081400E025E7 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		D46ABF7F2C6615E800E025E7 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D4EE39932C6A5D8A004D13E5 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46ABF722C65816000E025E7 /* RamosBasicsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +231,7 @@
 		D46ABF642C655C5A00E025E7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D4EE39922C6A5D82004D13E5 /* Views */,
 				D46ABF652C655C6D00E025E7 /* NetworkError.swift */,
 				D46ABF6E2C6579A300E025E7 /* ApiConstants.swift */,
 			);
@@ -254,6 +255,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		D4EE39922C6A5D82004D13E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4EE39932C6A5D8A004D13E5 /* ActivityIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,7 +280,6 @@
 			);
 			name = "Currency Converter";
 			packageProductDependencies = (
-				D46ABF712C65816000E025E7 /* RamosBasicsLibrary */,
 			);
 			productName = "Currency Converter";
 			productReference = D45E61022C6519AC00AC2883 /* Currency Converter.app */;
@@ -346,7 +354,6 @@
 			);
 			mainGroup = D45E60F92C6519AC00AC2883;
 			packageReferences = (
-				D46ABF702C65816000E025E7 /* XCLocalSwiftPackageReference "../../../SPMs/RamosBasicsLibrary" */,
 			);
 			productRefGroup = D45E61032C6519AC00AC2883 /* Products */;
 			projectDirPath = "";
@@ -401,6 +408,7 @@
 				D46ABF532C6532EE00E025E7 /* ConverterScreenView.swift in Sources */,
 				D46ABF752C658BDE00E025E7 /* MainCoinView.swift in Sources */,
 				D46ABF772C658C1300E025E7 /* SecundaryCoinView.swift in Sources */,
+				D4EE39942C6A5D8A004D13E5 /* ActivityIndicatorView.swift in Sources */,
 				D46ABF682C655D5100E025E7 /* FrankfurterResponse.swift in Sources */,
 				D46ABF802C6615E800E025E7 /* Transaction.swift in Sources */,
 				D45E61062C6519AC00AC2883 /* Currency_ConverterApp.swift in Sources */,
@@ -736,20 +744,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		D46ABF702C65816000E025E7 /* XCLocalSwiftPackageReference "../../../SPMs/RamosBasicsLibrary" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../SPMs/RamosBasicsLibrary;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D46ABF712C65816000E025E7 /* RamosBasicsLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RamosBasicsLibrary;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D45E60FA2C6519AC00AC2883 /* Project object */;
 }
